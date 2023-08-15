@@ -5,13 +5,12 @@
 #include <windows.h>  
 #include <winsock2.h>  
 #include <ws2tcpip.h>
-#pragma comment(lib, "ws2_32.lib") 
+#pragma comment(lib, "ws2_32.lib")
+
 #include <iostream>
 #include <stdio.h> 
 #include <string.h>
 #include <stdlib.h>
- 
-
 
 int sock_err(const char* function, int s) {
 	int err;
@@ -114,7 +113,6 @@ int main(int argc, char** argv) {
 		for (int i = 0; i < 512 && (a[0] = fgetc(file)) != ' '; i++)
 			long_number = long_number * 10 + a[0] - '0';
 		translation_long_number.Long = htonl(long_number);
-		
 		
 		// Отправка номера сообщения
 		translation_message_number.Int = htonl(message_number);
