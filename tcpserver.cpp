@@ -17,7 +17,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-
 // Получение дейтограммы, запись в файл
 int recv_string(int cs, unsigned int ip, const char* port);
 
