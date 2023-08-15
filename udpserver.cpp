@@ -42,7 +42,6 @@ union translation
 };
 bool stop = false;
 
-
 int init()
 {
 	// Для Windows следует вызвать WSAStartup перед началом использования сокетов
